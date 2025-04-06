@@ -6,8 +6,8 @@ const profileRouter = express.Router();
 
 profileRouter.post("/addprofile",upload.single("image") ,createProfile)
 profileRouter.get("/fetch",fetchProfile)
-profileRouter.get("/fetch",fetchProfiles)
-profileRouter.delete("/addprofile",deleteProfile)
-profileRouter.put("/addprofile",upload.single("image") ,updateProfile)
+profileRouter.get("/fetch/:id",fetchProfiles)
+profileRouter.delete("/deleteprofile/:id",deleteProfile)
+profileRouter.put("/updateprofile/:id",upload.single("image") ,updateProfile)
 
 export default profileRouter
