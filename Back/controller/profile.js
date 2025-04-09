@@ -1,13 +1,15 @@
 import mongoose from "mongoose";
 import profile from "../Models/ProfileModel.js";
+import uploadToCloudinary from '../Middleware/cloudinary.js'
 
 
 export async function createProfile(req, res) {
   try {
     const file = req.file;
     if (!file) return res.status(404).send({ message: "file not Found" });
+    const secure_url=await uploadToCloudinary(req);
 
-    const existingProfile = await profile.findOne({ Phone: req.body.phone });
+    const existingProfile = await profile.findOne({ Phone: req.body.number });
     if (existingProfile) {
       return res
         .status(400)
@@ -16,7 +18,7 @@ export async function createProfile(req, res) {
    
     const newProfile= new profile({
         ...req.body,
-        photo:secural_url
+        image:secure_url
     });
     await newProfile.save();
     res.status(201).send("profie Created")
@@ -48,12 +50,12 @@ export async function fetchProfile(req, res) {
       const { id } = req.params;
       const singleProfile = await profile.findById(id);
       if (!singleProfile)
-        return res.status(404).send({ message: "Profile not found" });
+        return res.status(404).send({ message: "Profile not found", erroe:error.message });
       return res.status(200).send({ profile: singleProfile });
     } catch (error) {
       return res
         .status(500)
-        .send({ message: "Couldn't fetch profile", error: error.message });
+        .send({ message: "Couldn't fetch profile", error:error.message });
     }
   }
 
@@ -90,9 +92,8 @@ export async function updateProfile(req,res){
     if(!updateProfile){
         return res.status(404).send({ message: "Profile not found" });  
     }
-    return   res
-    .status(200)
-    .send({ message: "Profile updated", profile: updatedProfile });
+    return   res.status(200)
+    .send({ message: "Profile updated", profile: updateProfile });
 
     }catch(error){
         res.status(400).send({message:"Failed to update the profiles",Error:error.message})

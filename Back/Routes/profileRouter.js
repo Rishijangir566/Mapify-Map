@@ -5,8 +5,8 @@ import upload from "../Middleware/multer.js"
 const profileRouter = express.Router();
 
 profileRouter.post("/addprofile",upload.single("image") ,createProfile)
-profileRouter.get("/fetch",fetchProfile)
-profileRouter.get("/fetch/:id",fetchProfiles)
+profileRouter.get("/fetch",fetchProfiles)
+profileRouter.get("/fetch/:id",fetchProfile)
 profileRouter.delete("/deleteprofile/:id",deleteProfile)
 profileRouter.put("/updateprofile/:id",upload.single("image") ,updateProfile)
 

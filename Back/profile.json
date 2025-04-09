@@ -1,0 +1,113 @@
+[
+    {
+      "_id": "67f36cc4ea28d2cb3461c867",
+      "name": "Rishi Jangir",
+      "address": "Jaipur",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile1.jpg",
+      "description": "Check Postman request",
+      "number": 9772336350,
+      "interest": "reading, writing",
+      "longitude": 75.7873,
+      "latitude": 26.9124
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c868",
+      "name": "Anjali Mehta",
+      "address": "Delhi",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile2.jpg",
+      "description": "Love exploring new places",
+      "number": 9812345678,
+      "interest": "traveling, photography",
+      "longitude": 77.1025,
+      "latitude": 28.7041
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c869",
+      "name": "Rahul Verma",
+      "address": "Mumbai",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile3.jpg",
+      "description": "Food blogger and reviewer",
+      "number": 9123456789,
+      "interest": "eating, blogging",
+      "longitude": 72.8777,
+      "latitude": 19.0760
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c870",
+      "name": "Priya Sharma",
+      "address": "Chandigarh",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile4.jpg",
+      "description": "Writer and poet",
+      "number": 9876543210,
+      "interest": "writing, painting",
+      "longitude": 76.7794,
+      "latitude": 30.7333
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c871",
+      "name": "Kunal Singh",
+      "address": "Pune",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile5.jpg",
+      "description": "Tech enthusiast",
+      "number": 9090909090,
+      "interest": "coding, gaming",
+      "longitude": 73.8567,
+      "latitude": 18.5204
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c872",
+      "name": "Neha Aggarwal",
+      "address": "Bangalore",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile6.jpg",
+      "description": "Nature lover",
+      "number": 9871234567,
+      "interest": "trekking, reading",
+      "longitude": 77.5946,
+      "latitude": 12.9716
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c873",
+      "name": "Amit Patel",
+      "address": "Ahmedabad",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile7.jpg",
+      "description": "Entrepreneur",
+      "number": 9001234567,
+      "interest": "startups, networking",
+      "longitude": 72.5714,
+      "latitude": 23.0225
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c874",
+      "name": "Simran Kaur",
+      "address": "Ludhiana",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile8.jpg",
+      "description": "Artist",
+      "number": 9912345678,
+      "interest": "painting, sketching",
+      "longitude": 75.8573,
+      "latitude": 30.9000
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c875",
+      "name": "Rohit Gupta",
+      "address": "Kolkata",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile9.jpg",
+      "description": "History buff",
+      "number": 9845671230,
+      "interest": "museums, literature",
+      "longitude": 88.3639,
+      "latitude": 22.5726
+    },
+    {
+      "_id": "67f36cc4ea28d2cb3461c876",
+      "name": "Meera Joshi",
+      "address": "Hyderabad",
+      "image": "https://res.cloudinary.com/dcmpkxqdq/image/upload/v1744006338/Mapify/profile10.jpg",
+      "description": "Coffee addict and bookworm",
+      "number": 9874563210,
+      "interest": "reading, cafes",
+      "longitude": 78.4867,
+      "latitude": 17.3850
+    }
+  ]
+  
