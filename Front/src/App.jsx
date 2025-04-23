@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import instance from "../axiosconfig";
 import { ImCross } from "react-icons/im";
+import {
+  APIProvider,
+  Map,
+  Marker,
+  useMarkerRef,
+} from "@vis.gl/react-google-maps";
 
 function App() {
   const [profiles, setProfiles] = useState([]);
@@ -87,6 +93,16 @@ function App() {
     fetchProfiles();
   }
 
+  const ApiKey = "a3ff0ea5e54fa5a846957f72620b0699";
+
+  const [markerRef, marker] = useMarkerRef();
+
+  useEffect(() => {
+    if (!marker) {
+      return;
+    }
+  }, [marker]);
+
   return (
     <>
       <header>
@@ -168,6 +184,27 @@ function App() {
                 <p>
                   <strong>Interest:</strong> {profile.interest}
                 </p>
+
+                  <Map
+                    style={{ width: "200px", height: "200px" }}
+                    position={{
+                      lat: Number(profile.latitude),
+                      lng: Number(profile.longitude),
+                    }} 
+                    zoom={8}
+                    gestureHandling={"greedy"}
+                    disableDefaultUI={true}
+                  >
+                    {profile?.latitude && profile?.longitude && (
+                      <Marker
+                        ref={markerRef}
+                        position={{
+                          lat: profile.latitude,
+                          lng: profile.longitude,
+                        }}
+                      />
+                    )}
+                  </Map>
                 <button
                   onClick={() => setShow(false)}
                   className="mt-4 bg-red-500 px-3 py-1 rounded"

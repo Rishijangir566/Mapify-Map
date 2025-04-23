@@ -20,6 +20,8 @@ app.use(cors(corsOption));
 
 connectDB();
 app.use("/profile",profileRouter)
+
+
 app.listen(port,()=>{
     console.log("Server is started at "+port);
 })
